@@ -20,6 +20,7 @@ class DHT {
         DHT();
         double humidity,temperature;
         int readDHT11Once(int pin); 
+        int readDHT11(int pin);
     private:
         uint8_t bits[5];
         int readSensor(int pin, int wakeupDelay);

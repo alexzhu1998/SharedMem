@@ -13,7 +13,7 @@
 
 
 
-
+// Funct
 static int get_shared_block(const char *filename, int size, int id) {
     key_t key;
     // printf("%s \n", FILENAME);
@@ -34,18 +34,6 @@ my_object* attach_memory_block(const char *filename, int size, int id) {
     
     return result;
 }
-
-// const char * attach_memory_block(const char *filename, int size) {
-//     int shared_block_id = get_shared_block(filename,size);
-//     const char * result;
-
-//     if (shared_block_id == IPC_RESULT_ERROR) return NULL;
-
-//     result = shmat(shared_block_id, NULL,0);
-//     if (result == (const char *) IPC_RESULT_ERROR) return NULL;
-    
-//     return result;
-// }
 
 bool detach_memory_block(my_object* block) {
     return (shmdt(block) != IPC_RESULT_ERROR);

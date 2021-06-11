@@ -6,9 +6,13 @@
 
 struct my_object {
     // char * datetime;
-    float temp;
-    float hum;
+    float temp; // 4
+    float hum; // 4
+    char datetime[30];
+    int cur_id; // 4
+    bool complete; // 1
 };
+
 
 
 // attach a shared memory block, associated with filename, create if doesnt exist
