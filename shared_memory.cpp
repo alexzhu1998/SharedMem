@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <sys/types.h>
+#include <sys/types.h> //key_t
 #include <sys/ipc.h>
 #include <sys/shm.h>
 

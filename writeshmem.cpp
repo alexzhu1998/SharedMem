@@ -13,9 +13,9 @@ void assign_time(char* datetime) {
     time_t rawtime;
     struct tm * timeinfo;
 
-    time ( &rawtime );
-    timeinfo = localtime ( &rawtime );
-    strcpy(datetime,asctime (timeinfo));
+    time (&rawtime);
+    timeinfo = localtime(&rawtime);
+    strcpy(datetime,asctime(timeinfo));
 }
 
 int main(int argc, char* argv[]) {
